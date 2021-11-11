@@ -1,0 +1,93 @@
+footer{
+    background:black;
+    #top{
+        .container{
+            margin-top: 30px;
+            padding: 60px;
+            .row{
+                .footer-text{
+                    
+                    .social-media{
+                        margin-top: 60px;
+                        i{
+                            transition: 0.4s;
+                            cursor: pointer;
+                            color: white;
+                            font-size: 30px;
+                            margin-left: 15px;
+                            &:hover{
+                                color: #1E4C9F;
+                            }
+                        }
+
+                    }
+                    .contact{
+                       display: flex;
+                       flex-direction: column;
+                       align-items:flex-end ;
+                        p{
+                            color: white;
+                            font-weight: bold;
+
+                        }
+                        a{
+                            
+                            text-decoration: none;
+                            display: flex;
+                            flex-direction: row;
+                            color: white;
+                            margin-top: 10px;
+                            transition: 0.4s;
+                            letter-spacing: 2px;
+                            &:hover{
+                                color: #1E4C9F;
+                            }
+                        }
+                    }
+
+                }
+               
+            }
+        }
+    }
+    hr{
+       
+        border: 2px solid white;
+    }
+    #bottom{
+        
+        .container{
+            .row{
+                
+                .col-6{
+                    
+                    .copy-right{
+                        cursor: pointer;
+                        margin-top: 50px;
+                        p{
+                            color: white;
+                            transition: 0.4s;
+                            &:hover{
+                                color:#1E4C9F ;
+    
+                            }
+    
+
+                        }
+                       
+                    }
+                    .exchange-rate{
+                        margin-bottom: 30px;
+                        select{
+                           outline: none;
+                           padding: 10px 10px;
+                           border: 1px solid yellow;
+                        }
+
+                    }
+                }
+            }
+        }
+       
+    }
+}

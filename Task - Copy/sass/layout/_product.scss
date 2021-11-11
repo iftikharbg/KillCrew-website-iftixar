@@ -1,0 +1,92 @@
+.product-example{
+    margin-top: 20vh;
+    .container{
+        .row{
+            .product-image-wrapper{
+                .product-image{
+                    img{
+                        max-width: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }}
+                .product-text-wrapper{
+
+                
+                .product-text{
+                    h1{
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 600;
+                        border-bottom: 4px dashed #3349B5;
+
+                    }
+                    span{
+                      
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold;
+
+                    }
+                    p{
+                        
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold
+                        
+                    }
+                }
+                .product-size{
+                    select{
+                        @extend %size;
+                        outline: none;
+                        padding: 10px 201px;
+                       
+                    }
+                }
+                .product-buttons{
+                    margin-top: 15px;
+                    .add-button{
+                        @extend %button;
+                        padding: 10px 70px;
+                        background-color: white ;
+                        color: #020C3C;
+                        transition: 0.4s;
+                        &:hover{
+                            color: white;
+                            background-color: #0078B9 ;
+                        }
+
+                        
+                    }
+                    .buy-button{
+                        @extend %button;
+                        padding: 10px 70px;
+                        background-color: #020C3C ;
+                        color: white;
+                        transition: 0.4s;
+                        &:hover{
+                            color: white;
+                            background-color: #0078B9 ;
+                        }
+                    }
+                    
+                    
+                }
+                .product-description{
+                    margin-top: 30px;
+                    ul{
+                        li{
+                            line-height: 37px;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: bold;
+                            color: #727272;
+                            span{
+                                color: red;
+                                font-weight: 600;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

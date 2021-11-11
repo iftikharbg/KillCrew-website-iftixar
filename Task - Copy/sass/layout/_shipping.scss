@@ -1,0 +1,116 @@
+.shipping-main{
+    min-height: 100vh;
+    background-color:#FFF1DF ;
+    padding-top: 30px;
+    .container{
+        .row{
+            .col-12{
+                .kill-logo{
+                    img{
+                        width: 20%;
+
+                    }
+                }
+                nav{
+                    margin-left: 10px;
+                    margin-top: 20px;
+                }
+                .contact-info{
+                    h4{
+                        padding-top: 10px;
+                        padding-left: 10px;
+                        color: #4C4743;
+
+                    }
+
+                    
+                    input{
+                        @extend %single;
+                        @extend %inputs;
+
+                    }
+                }
+                .user-checkbox{
+                    margin-top: 5px;
+                    margin-left:8px ;
+                    input{
+                        @extend %inputs;
+                    }
+                }
+                .shipping-address{
+                    h4{
+                        color: #4C4743;
+                        padding-top: 20px;
+                        padding-left: 10px;
+
+                    }
+                    form{
+                        margin-top: 20px;
+                        .lastfirstname{
+                            input{
+                                @extend %input;
+                                @extend %inputs;
+                            }
+                        }
+                        .user-address{
+                            input{
+                                @extend %single;
+                                @extend %inputs;
+                            }
+                        }
+                        .user-apartment{
+                            input{
+                                @extend %single;
+                                @extend %inputs;
+                            }
+                        }
+                        .postalandcity{
+                            input{
+                                @extend %input;
+                                @extend %inputs;
+                            }
+                        }
+                        .country{
+                            select{
+                                @extend %size;
+                                padding: 10px 258px;
+                                margin-left: 5px;
+                                
+                            }
+                        }
+                        .user-phone{
+                            input{
+                                @extend %single;
+                                @extend %inputs;
+                            }
+                        }
+                        .shipping-button{
+                            button{
+                                @extend %button;
+                                margin-left: 5px;
+                                border-radius: 5px;
+                                color: white;
+                                background-color: #000876 ;
+                                transition: 0.4s;
+                                margin-top: 20px;
+                                &:hover{
+                                    background-color: #00054b;
+                                }
+
+                            }
+                        }
+                    }
+                    .termsandprivacy{
+                        a{
+                            text-decoration: none;
+                            margin-left: 20px;
+
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}

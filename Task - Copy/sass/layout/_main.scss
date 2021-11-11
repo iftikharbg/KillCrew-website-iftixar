@@ -1,0 +1,117 @@
+main{
+    #wolf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://cdn.shopify.com/s/files/1/1955/8565/files/kill_crew_cover_4500x_9ab0ffbd-6929-41ec-beda-5c576395282c_2000x.png?v=1621377405);
+        background-repeat: no-repeat;
+        background-size:cover ;
+        min-height: 100vh;
+        overflow: hidden;
+        width: 100%;
+        .container{
+            .row{
+                text-align: center;
+                h1{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 600;
+                    color: white;
+                }
+                p{
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+        }
+    }
+    #products{
+        .container{
+            .row{
+                .card-container{
+                  
+                    .card{
+                        
+                        align-items:center ;
+                        border: none;
+                        .image-box{
+                            object-fit: cover;
+                            
+                            img{
+                               
+                               max-width: 100%;
+                               object-fit: cover;
+                               display: block;
+
+                            }
+
+                        }
+                        .text-box{
+                            cursor: pointer;
+                            h1{
+                                font-size: 20px;
+                                text-align: center;
+                                margin-top: 10px;
+                                
+
+                            }
+                            span{
+                                color: #727484;
+                                font-size: 20px;
+                                display: flex;
+                                justify-content: center;
+                                
+                                
+
+                            }
+                            p{
+                                color: #727272;
+                                margin-top: 20px;
+                                font-weight: bold
+
+                            }
+                        }
+                        .size-box{
+                           margin-bottom: 10px;
+                           display: flex;
+                           justify-content: center;
+                            select{
+                                @extend %size;
+                                outline: none;
+                                
+                            }
+
+                        }
+                        .button-box{
+                            align-self: stretch;
+                            display: flex;
+                            flex-direction: column;
+                            .button-1{
+                                  @extend %button;
+                                  
+                                  background-color: white;
+                                  color: #020C3C;
+                                  transition: 0.4s;
+                                  &:hover{
+                                      color: white;
+                                      background: #253cb3;
+                                      
+                                  }
+                            }
+                            .button-2{
+                                @extend %button;
+                                background:#020C3C ;
+                                color: white;
+                                transition: 0.4s;
+                                &:hover{
+                                    background:#253cb3 ;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

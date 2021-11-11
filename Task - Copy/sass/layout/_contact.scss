@@ -1,0 +1,123 @@
+.contact-main{
+    margin-top: 20vh;
+    .container{
+        .row{
+            h1{
+                border-bottom: 4px dashed #3349B5 ;
+                padding-bottom: 20px;
+            }
+           
+            p{
+                color: #7274A4;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                a{
+                    text-decoration: none;
+                }
+            }
+            h3{
+                text-decoration: underline;
+            }
+            .top-inputs{
+                
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px;
+                .name-box{
+                    width: 30%;
+                    label{
+                        color: #727272;
+                        font-weight: bold;
+                        span{
+                            color: red;
+                        }
+
+                    }
+                    input{
+                        padding: 10px 10px;
+                        border: 1px solid #FCC57C;
+                        width: 100%;
+                        outline: none;
+                        &:focus{
+                            border-color: #72729F;
+                        }
+                    }
+                }
+                .lastname-box{
+                    width: 30%;
+                    label{
+                        font-weight: bold;
+                        color: #727272;
+                        span{
+                            color: red;
+                        }
+
+                    }
+                    input{
+                        padding: 10px 10px;
+                        border: 1px solid #FCC57C;
+                        width: 100%;
+                        outline: none;
+                        &:focus{
+                            border-color: #72729F;
+                        }
+                    }
+                }
+                .text{
+                    width: 63%;
+                    textarea{
+                        border: 1px solid #FCC57C;
+                        outline: none;
+                        width: 100%;
+                        min-height: 15vh;
+                        &:focus{
+                            border-color: #72729F;
+                        }
+                       
+                    }
+                   
+                    
+                    label{
+                        font-weight: bold;
+                        color: #727272;
+                        span{
+                            color: red;
+                        }
+                           
+                    }
+                }
+
+                .send-button{
+                    width: 63%;
+                    button{
+                        padding: 10px 40px;
+                        border: none;
+                        color: white;
+                        background-color:#020C3C ;
+                        transition: 0.4s;
+                        &:hover{
+                            background-color: #4F8FF5;
+                            
+                        }
+
+                    }
+                }
+            }
+            .address{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h5{
+                    text-align: center;
+
+                }
+                p{
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+
+}

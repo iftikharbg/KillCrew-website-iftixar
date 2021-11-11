@@ -1,0 +1,34 @@
+.about-main{
+    margin: 18vh;
+    .container{
+        .row{
+            .about-us{
+                border-bottom: 4px dashed #3349B5;
+            }
+           
+            
+            .kill-crew{
+                margin-top: 40px;
+                text-decoration: none ;
+                text-align: center ;
+
+            }
+            .our-quest{
+                text-align: center ;
+                color: #727472;
+                font-weight: bold;
+            }
+            .we-wolves{
+                text-align: center ;
+                color: #727472;
+                font-weight: bold;
+            }
+            .we-killcrew{
+                text-align: center ;
+                color: #727472;
+                font-weight: bold;
+
+            }
+        }
+    }
+}

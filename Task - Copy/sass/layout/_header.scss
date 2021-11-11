@@ -1,0 +1,318 @@
+header{
+    
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: black;
+    @media screen and(min-width:200px){
+        position: static;
+    }
+    @media screen and(min-width:768px){
+        position: fixed;
+    }
+    .basket{
+         position: absolute;
+         right: 30px;
+         top: 20px;
+         #count{
+             position: absolute;
+             color: white;
+             background: red;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             border-radius: 50%;
+             width: 20px;
+             height: 20px;
+             right: -10px;
+             top: -10px;
+         }
+        
+        i{
+            font-size: 1.5rem;
+            color: white;
+
+        }
+        .basket-menu{
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 300px;
+            display: flex;
+            
+            background-color: #FFF1DF;
+            z-index: 1;
+            height: 300px;
+            flex-direction: column;
+            overflow:auto;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+            .card{
+                width: 100px;
+                flex-wrap: wrap;
+                display: flex;
+                flex-direction: column;
+                
+               .image-box{
+                   width: 100%;
+                   object-fit: cover;
+                img{
+                    width: 50%;
+                    display: block;
+                }
+               }
+               .text-box{
+                   h1{
+                       font-size: 10px;
+                       
+                   }
+                   span{
+                       font-size: 10px;
+                   }
+                   p{
+                       font-size: 10px;
+                   }
+               }
+               .size-box{
+                   font-size: 10px;
+               }
+               .button-box{
+                   .button-1{
+                       font-size: 10px;
+                   }
+                   .button-2{
+                       font-size: 10px;
+                   }
+               }
+              
+            }
+            
+            
+        }
+    }
+    
+    .row{
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        .col-8{
+           
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            @media screen and (min-width:200px ){
+                flex-direction: column;
+             }
+             @media screen and (min-width:768px ){
+                flex-direction: row;
+             }
+
+
+             a{
+
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+                letter-spacing: 3px;
+                padding: 15px 0;
+                position: relative;
+                text-decoration: none;
+                color: white;
+                margin-left: 30px;
+                @media screen and(min-width:200px){
+                    font-size:10px;
+                }
+                @media screen and(min-width:992px){
+                    font-size:16px;
+                }
+                &:hover{
+                    color: yellow;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    height: 1px;
+                    background-color: yellow;
+                    bottom: 0;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+                &:hover::after{
+                    opacity: 1;
+                    
+                }
+               
+
+            }
+            .tops-menu{
+                &:hover + .tops{
+                    
+                     opacity: 1;
+
+                }
+              
+        
+            }
+            .tops{
+                transition: 0.5s;
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                display: flex;
+                opacity: 0;
+                
+                bottom: -90px;
+                background-color: black ;
+                
+                color: white;
+                justify-content: space-around;
+                padding: 20px 0;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.3s;
+                    &:hover{
+                        color: yellow;
+                    }
+                }
+            }
+            .bottoms-menu{
+                &:hover + .bottoms{
+                    
+                     opacity: 1;
+
+                }
+              
+        
+            }
+            .bottoms{
+                transition: 0.5s;
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                display: flex;
+                opacity: 0;
+                
+                bottom: -90px;
+                background-color: black ;
+                
+                color: white;
+                justify-content: space-around;
+                padding: 20px 0;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.3s;
+                    &:hover{
+                        color: yellow;
+                    }
+                }
+            }
+            .headwear-menu{
+                &:hover + .headwear{
+                    
+                     opacity: 1;
+
+                }
+              
+        
+            }
+            .headwear{
+                transition: 0.5s;
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                display: flex;
+                opacity: 0;
+                
+                bottom: -90px;
+                background-color: black ;
+                
+                color: white;
+                justify-content: space-around;
+                padding: 20px 0;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.3s;
+                    &:hover{
+                        color: yellow;
+                    }
+                }
+            }
+            .accessories-menu{
+                &:hover + .accessories{
+                    
+                     opacity: 1;
+
+                }
+              
+        
+            }
+            .accessories{
+                transition: 0.5s;
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                display: flex;
+                opacity: 0;
+                
+                bottom: -90px;
+                background-color: black ;
+                
+                color: white;
+                justify-content: space-around;
+                padding: 20px 0;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: 0.3s;
+                    &:hover{
+                        color: yellow;
+                    }
+                }
+            }
+        }
+       
+        .col-4{
+            .logo-box{
+               
+                object-fit: cover;
+              
+               
+                img{
+                     
+                     max-width: 100%;
+
+                }
+            }
+          
+
+        }
+       
+        
+    }
+    
+   
+    .bottoms{
+        display: none;
+    }
+    .headwear{
+        display: none;
+    }
+    .accessories{
+        display: none;
+    }
+
+
+}
